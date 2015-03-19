@@ -50,5 +50,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['concat', 'uglify']);
   grunt.registerTask('build', ['default']);
   grunt.registerTask('test', ['karma']);
-  grunt.registerTask('rel', ['build', 'release']);
+  grunt.registerTask('version', ['build', 'release']);
 };

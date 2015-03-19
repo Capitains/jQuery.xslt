@@ -10,7 +10,7 @@
     "Capitains"
   ],
   "dependencies": {
-    "capitains-sparrow": "1.0.5",
+    "capitains-sparrow": "~1.0.6",
     "jquery": "~2"
   },
   "devDependencies": {
