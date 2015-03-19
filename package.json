@@ -1,7 +1,7 @@
 {
   "name": "capitains-sparrow.xslt",
   "description": "jQuery xslt plugin for CTS repositories",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "keywords": [
     "CITE",
     "CTS",
@@ -10,7 +10,7 @@
     "Capitains"
   ],
   "dependencies": {
-    "capitains-sparrow" : "1.0.5",
+    "capitains-sparrow": "1.0.5",
     "jquery": "~2"
   },
   "devDependencies": {
@@ -22,7 +22,6 @@
     "grunt-contrib-clean": "~0.6",
     "grunt-release": "0.11.0",
     "grunt-karma": "~0.10",
-
     "jasmine": "~2.2",
     "jasmine-ajax": "~2",
     "jasmine-jquery": "~2",
@@ -71,12 +70,10 @@
   "bugs": {
     "url": "https://github.com/Capitains/jQuery.xslt/issues"
   },
-  "repository": 
-    {
-      "type": "git",
-      "url": "https://github.com/Capitains/jQuery.xslt.git"
-    }
-  ,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Capitains/jQuery.xslt.git"
+  },
   "licenses": [
     {
       "name": "GNU GPL 3.0",
