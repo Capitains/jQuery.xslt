@@ -174,6 +174,13 @@
         _this.inputs[param] = $input;
       });
 
+      // add any unregistered params
+      Object.keys(_this.settings.driver).forEach(function(param) {
+        if (! _this.xslt.options[param]) {
+          _this.inputs[param] = _this.settings.driver[param];
+        }
+      });
+
       if(typeof _this.settings.trigger === "string") {
         _this.element.on(_this.settings.trigger, function () { _this.send(); });
       }
@@ -212,10 +219,21 @@
           data[param] = $input.val();
         }
         if(typeof data[param] === "string") {
-          if(_this.xslt.options[param].type === "boolean") {
-            data[param] = (data[param] === "true" || data[param] === true) ? true : false;
-          } else if (_this.xslt.options[param].type === "list") {
-            data[param] = data[param].replace(/\s+/g, '').split(",");
+          if (_this.xslt.options[param]) {
+            if(_this.xslt.options[param].type === "boolean") {
+              data[param] = (data[param] === "true" || data[param] === true) ? true : false;
+            } else if (_this.xslt.options[param].type === "list") {
+              data[param] = data[param].replace(/\s+/g, '').split(",");
+            }
+          } else {
+             // we don't have it as a registered option, make some intelligent guesses
+             // if it looks like a boolean assume it is
+             if (data[param] === "true" || data[param] === "false") {
+               data[param] = data[param] === "true" ? true : false;
+             // if it looks like a list assume it is
+             } else if (data[param].match(/,/))  {
+               data[param] = data[param].replace(/\s+/g, '').split(",");
+             }
           }
         }
       });
