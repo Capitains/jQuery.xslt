@@ -173,3 +173,13 @@ Because so many plugins force you to dig the code or extend your already existin
 </body>
 </html>
 ```
+
+
+## Releasing
+
+the jQuery.xslt package is registered as an [npm](https://docs.npmjs.com/getting-started/publishing-npm-packages) and  [bower](http://bower.io/docs/creating-packages/) package named capitains.sparrow.xslt.  The release process is follows:
+
+1. Update the release version in bower.json and package.json
+1. `grunt build` 
+1. commit the updated json and package files and push to github
+1. Using the GitHub interface create a new release tag and release notes.
