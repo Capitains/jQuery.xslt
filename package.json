@@ -1,7 +1,7 @@
 {
   "name": "capitains-sparrow.xslt",
   "description": "jQuery xslt plugin for CTS repositories",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
     "CITE",
     "CTS",
@@ -10,7 +10,7 @@
     "Capitains"
   ],
   "dependencies": {
-    "capitains-sparrow": "~1.0.6",
+    "capitains-sparrow": "~1.2.1",
     "jquery": "~2"
   },
   "devDependencies": {
