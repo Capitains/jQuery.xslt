@@ -1,9 +1,9 @@
 {
   "name": "capitains-sparrow.xslt",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/Capitains/jQuery.xslt",
   "authors": [
-    "Thibault Clérice <leponteineptique@gmail.com>"
+    "Thibault Clerice <leponteineptique@gmail.com>"
   ],
   "description": "CTS API abstractions and jQuery plugin",
   "main": "dist/cts.jquery.xslt.min.js",
